@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:speed_code/signInsignUp/splash_page.dart';
+import 'package:speed_code/moviePage/pages/movie_page.dart';
+import 'package:speed_code/signInsignUp/splash_page.dart'; // FOR SIGNIN SIGNUP VALIDATION
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +12,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashPage(),
+      home: MoviePage(),
     );
   }
 }

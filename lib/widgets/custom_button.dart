@@ -4,10 +4,12 @@ import 'package:speed_code/theme/theme.dart';
 class CustomButton extends StatelessWidget {
   final String? title;
   final Function? onPressed;
+  final Color? bgColor;
   const CustomButton({
     super.key,
     this.title,
     this.onPressed,
+    this.bgColor,
   });
 
   @override
@@ -22,7 +24,7 @@ class CustomButton extends StatelessWidget {
             10,
           ),
         ),
-        backgroundColor: const Color(0xFF00AEE0),
+        backgroundColor: bgColor ?? const Color(0xFF00AEE0),
       ),
       child: Text(
         title ?? 'Change Text Button',

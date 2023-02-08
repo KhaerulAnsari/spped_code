@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:speed_code/moviePage/pages/movie_page.dart';
+import 'package:speed_code/destination/destination_page.dart';
+import 'package:speed_code/moviePage/pages/movie_page.dart'; // FOR MOVIE PAGE
 import 'package:speed_code/signInsignUp/splash_page.dart'; // FOR SIGNIN SIGNUP VALIDATION
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MoviePage(),
+      home: DestinationPage(),
     );
   }
 }
